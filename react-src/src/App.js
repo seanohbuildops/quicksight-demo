@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { withStyles } from '@material-ui/core/styles';
+var QuickSightEmbedding = require('amazon-quicksight-embedding-sdk');
 
 const styles = theme => ({
   title: {
@@ -19,6 +20,7 @@ class App extends React.Component {
 
   state = {
     isLoading: false,
+    embedUrl: undefined,
   };
 
   componentDidMount() {
@@ -27,13 +29,23 @@ class App extends React.Component {
     fetch('https://22981a99d3.execute-api.us-east-1.amazonaws.com/Prod/quicksight-dashboard-embed-url')
       .then(response => response.json())
       .then(data => {
-        console.log(data);
-        this.setState({ isLoading: false });
+        this.setState({ isLoading: false, embedUrl: data });
       })
   }
 
   render(){
     const { classes } = this.props;
+
+    var options = {};
+
+    if(this.state.embedUrl){
+      options = {
+        url: this.state.embedUrl,
+        container: document.getElementById('dashboardContainer'),
+      };
+
+      QuickSightEmbedding.embedDashboard(options);
+    }
 
     return (
       <div className="App">
@@ -49,6 +61,7 @@ class App extends React.Component {
             </Toolbar>
           </AppBar>
         </header>
+        <div id='dashboardContainer'/>
       </div>
     );
 

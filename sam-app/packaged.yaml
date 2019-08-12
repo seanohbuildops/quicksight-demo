@@ -16,7 +16,7 @@ Outputs:
 Resources:
   QuicksightDashboardEmbedURLFunction:
     Properties:
-      CodeUri: s3://bh-quicksight-prototype-app/c704902f8b8d3cf20943137aa5a81af7
+      CodeUri: s3://bh-quicksight-prototype-app/fdf6a4e127ffa9203f2550c102923201
       Events:
         GetQuicksightDashboardEmbedURL:
           Properties:

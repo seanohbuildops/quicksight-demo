@@ -15,6 +15,8 @@ exports.lambdaHandler = async (event, context) => {
       AwsAccountId: process.env.AWS_SEANS_ACCOUNT_ID,
       DashboardId: process.env.AWS_QUICKSIGHT_DASHBOARD_ID,
       IdentityType: 'IAM',
+      ResetDisabled: true,
+      UndoRedoDisabled: true,
     }, function(err, data){
 
       if(err){
