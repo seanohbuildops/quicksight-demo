@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'sam-app
+
+  Get the Quicksight Dashboard Embed URL
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Outputs:
+  QuicksightDashboardEmbedURLApi:
+    Description: API Gateway endpoint URL for Prod stage for Quicksight Dashboard
+      Embed URL function
+    Value:
+      Fn::Sub: https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/quicksight-dashboard-embed-url/
+Resources:
+  QuicksightDashboardEmbedURLFunction:
+    Properties:
+      CodeUri: s3://bh-quicksight-prototype-app/cc7007e4003487a37513dfc7afe14d05
+      Events:
+        GetQuicksightDashboardEmbedURL:
+          Properties:
+            Method: get
+            Path: /quicksight-dashboard-embed-url
+          Type: Api
+      FunctionName: bh-quicksight-prototype-lambda-dev-quicksightDashboardEmbedURL
+      Handler: app.lambdaHandler
+      Runtime: nodejs10.x
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
