@@ -25,8 +25,12 @@ exports.lambdaHandler = async (event, context) => {
       }
 
       response = {
-        'statusCode': 200,
-        'body': data.EmbedUrl
+        statusCode: 200,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data.EmbedUrl)
       }
 
       return resolve(response);
