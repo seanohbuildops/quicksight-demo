@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a072cd1dbb1be2ab77c62af0875be916",
+    "revision": "523d7f4a7fb5c2c6ba94aa19ec3bf6c2",
     "url": "/quicksight-demo/index.html"
   },
   {
-    "revision": "f519244b94bd7f4e39fe",
+    "revision": "8aff30174f3f9f6df6b6",
     "url": "/quicksight-demo/static/css/main.6259f84f.chunk.css"
   },
   {
-    "revision": "35bf258d6cf388c246f7",
-    "url": "/quicksight-demo/static/js/2.c2bf7a6c.chunk.js"
+    "revision": "39626e818181211fe69a",
+    "url": "/quicksight-demo/static/js/2.ef6959b0.chunk.js"
   },
   {
-    "revision": "f519244b94bd7f4e39fe",
-    "url": "/quicksight-demo/static/js/main.06990355.chunk.js"
+    "revision": "8aff30174f3f9f6df6b6",
+    "url": "/quicksight-demo/static/js/main.f64148e5.chunk.js"
   },
   {
     "revision": "59b1d9c93bc435b6f0fd",
