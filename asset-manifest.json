@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/quicksight-demo/static/css/main.6259f84f.chunk.css",
+    "main.js": "/quicksight-demo/static/js/main.06990355.chunk.js",
+    "main.js.map": "/quicksight-demo/static/js/main.06990355.chunk.js.map",
+    "runtime~main.js": "/quicksight-demo/static/js/runtime~main.0f4839cc.js",
+    "runtime~main.js.map": "/quicksight-demo/static/js/runtime~main.0f4839cc.js.map",
+    "static/js/2.c2bf7a6c.chunk.js": "/quicksight-demo/static/js/2.c2bf7a6c.chunk.js",
+    "static/js/2.c2bf7a6c.chunk.js.map": "/quicksight-demo/static/js/2.c2bf7a6c.chunk.js.map",
+    "index.html": "/quicksight-demo/index.html",
+    "precache-manifest.6272c309316aca2ccae1a23059b89b62.js": "/quicksight-demo/precache-manifest.6272c309316aca2ccae1a23059b89b62.js",
+    "service-worker.js": "/quicksight-demo/service-worker.js",
+    "static/css/main.6259f84f.chunk.css.map": "/quicksight-demo/static/css/main.6259f84f.chunk.css.map"
+  }
+}
